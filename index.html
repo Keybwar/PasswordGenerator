@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1>Generate a<br><span id="test">random password</span></h1>
+            <p id="p">Never use an insecure password again. </p>
+            <button onclick="genPass()">Generate passwords</button>
+            <button id="button-el" onclick="copyPassword(event)">COPY</button>
+            <div class="line-1">
+            </div>
+            <div class="flex-container">
+
+                <div class="flex-child">
+                    <p id="password-el"></p>
+                </div>
+  
+                <!--
+                <div class="flex-child">
+                    <p id="password-el1"></p>
+                </div>
+                -->
+  
+            </div>
+        
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
