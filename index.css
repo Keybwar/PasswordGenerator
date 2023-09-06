@@ -85,7 +85,7 @@ button:focus {
     
 }
 
-.flex-child {
+/*.flex-child {
     flex: 1;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -103,3 +103,7 @@ button:focus {
 .flex-child:first-child {
     margin-right: 24px;
 } 
+*/
+#pw1 {
+    width: 211px;
+}
