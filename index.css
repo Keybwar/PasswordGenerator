@@ -79,13 +79,13 @@ button:focus {
     
 }
 
-.flex-container {
+/*.flex-container {
     display: flex;
     max-width: 211px;
     
 }
 
-/*.flex-child {
+.flex-child {
     flex: 1;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -105,5 +105,11 @@ button:focus {
 } 
 */
 #pw1 {
+    margin-top: 1px;
     width: 211px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #55F991;
+    background-color:#273549;
 }
