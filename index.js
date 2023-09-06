@@ -19,7 +19,9 @@ function genPass(){
         let randomIndex9 = Math.floor(Math.random()*characters.length)
         let randomIndex10 = Math.floor(Math.random()*characters.length)
         let randomIndex11 = Math.floor(Math.random()*characters.length)
-        pw1.textContent = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
+        let randomIndex12 = Math.floor(Math.random()*characters.length)
+        let randomIndex13 = Math.floor(Math.random()*characters.length)
+        pw1.textContent = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11] + characters[randomIndex12] + characters[randomIndex13]
         
         let savePass = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
         return savePass
@@ -34,4 +36,3 @@ function copyToClip(clickedID){
     document.getElementById(clickedID).innerText = "Copied to clipboard!"
     return
 }
-
