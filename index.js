@@ -2,7 +2,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 const charactersOdd = ["$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/","~","`","!","@","#"]
 
-let passwordEl = document.querySelector("#password-el")
+let pw1 = document.querySelector("#pw1")
 let passwordEl1 = document.querySelector("#password-el1")
 
 function genPass(){
@@ -19,7 +19,7 @@ function genPass(){
         let randomIndex9 = Math.floor(Math.random()*characters.length)
         let randomIndex10 = Math.floor(Math.random()*characters.length)
         let randomIndex11 = Math.floor(Math.random()*characters.length)
-        passwordEl.textContent(this.id) = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
+        pw1.textContent(this.id) = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
         
         let savePass = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
         return savePass
