@@ -28,11 +28,9 @@ function genPass(){
     
 }
 
-function copyPassword(event) {
-    
-    let selectedEl = document.getElementById(event.target.id);
-
-    if (selectedEl.textContent !== "") {
-        navigator.clipboard.writeText(selectedEl.textContent);
-    }
+function copyToClip(clickedID){
+    let text = document.getElementById(clickedID).innerText
+    navigator.clipboard.writeText(text)
+    document.getElementById(clickedID).innerText = "Copied to clipboard!"
+    return
 }
