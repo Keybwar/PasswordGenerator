@@ -19,7 +19,7 @@ function genPass(){
         let randomIndex9 = Math.floor(Math.random()*characters.length)
         let randomIndex10 = Math.floor(Math.random()*characters.length)
         let randomIndex11 = Math.floor(Math.random()*characters.length)
-        pw1.textContent(this.id) = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
+        pw1.textContent = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
         
         let savePass = characters[randomIndex] + characters[randomIndex1] + characters[randomIndex2] + characters[randomIndex3] + characters[randomIndex4] + characters[randomIndex5] + characters[randomIndex6] + characters[randomIndex7] + characters[randomIndex8] + characters[randomIndex9] + characters[randomIndex10] + characters[randomIndex11]
         return savePass
@@ -28,7 +28,7 @@ function genPass(){
     
 }
 
-function copyToClip(clickedID){
+function copyToClip(){
     let text = document.getElementById(clickedID).innerText
     navigator.clipboard.writeText(text)
     alert("Copied the text: " + copyText.value);
