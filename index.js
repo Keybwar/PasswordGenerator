@@ -31,6 +31,6 @@ function genPass(){
 function copyToClip(clickedID){
     let text = document.getElementById(clickedID).innerText
     navigator.clipboard.writeText(text)
-    document.getElementById(clickedID).innerText = "Copied to clipboard!"
+    alert("Copied the text: " + copyText.value);
     return
 }
